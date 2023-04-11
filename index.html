@@ -10,11 +10,41 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@400;700&family=Outfit:wght@100&display=swap"
       rel="stylesheet"
+      <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
     />
-    <title>ProductSite</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@400;700&family=Outfit:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <title>Product-Preview-Site</title>
   </head>
   <body>
-    <h1>Perfume</h1>
-    <h2>Gabrielle Essence Eau da Perfum</h2>
+    <article>
+      <div class="box1">
+        <img
+          src="image-product-desktop.jpg"
+          alt="product-image"
+          class="product-image"
+        />
+      </div>
+      <div class="box2">
+        <h1>Perfume</h1>
+        <p class="product-description">Gabrielle Essence Eau da Perfum</p>
+        <p class="sub-discription">
+          A floral, solar and voluptous interpretation composed by oliver Polge,
+          Perfumer-Creator for the house of CHANEL.
+        </p>
+        <div class="prices">
+          <p class="sale">$149.99</p>
+          <p class="original-price"><del>$169.99</del></p>
+        </div>
+        <button>
+          <img src="icon-cart.svg" alt="cart-image" /> Add to Cart
+        </button>
+      </div>
+    </article>
   </body>
 </html>
