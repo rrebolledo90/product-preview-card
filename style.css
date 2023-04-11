@@ -1,53 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  /* display: inline-block; */
+  box-sizing: border-box;
 }
-body {
-  background-color: hsl(30, 38%, 92%);
-}
-main {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-@font-face {
-  font-family: montserrate-regular;
-  src: url(Montserrat-Italic-VariableFont_wght.ttf);
-}
-@font-face {
-  font-family: montserrate-bold;
-  src: url(Montserrat-VariableFont_wght.ttf);
-}
-@font-face {
-  font-family: franunces;
-  src: url(Fraunces-VariableFont_SOFT\WONK\opsz\wght.ttf);
-}
-.product-picture {
-  width: 20rem;
-  height: auto;
-}
-
-.product-title,
-.product-info {
-  font-family: montserrate-regular;
-  font-size: 0.8rem;
-  letter-spacing: 0.2rem;
-  color: hsl(228, 12%, 48%);
-}
-
-.product-name {
-  font-family: montserrate-bold;
-  font-size: 2rem;
-}
-.price {
-  display: flex;
-  gap: 2rem;
-}
-.box2 {
-  width: 50%;
-  background-color: hsl(0, 0%, 100%);
-}
-.sale-price {
-  font-family: franunces;
+h2 {
+  font-family: "Fraunces", serif;
 }
