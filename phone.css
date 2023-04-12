@@ -1,0 +1,109 @@
+@media screen and (max-width: 500px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    width: 25rem;
+    margin: 0 auto;
+    background-color: hsl(30, 38%, 92%);
+  }
+
+  /* Gridbox */
+
+  .container {
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: 17.9rem;
+    grid-template-rows: 1fr;
+    align-content: center;
+    justify-content: center;
+  }
+  /* background picture */
+
+  .box1 {
+    background-image: url(image-product-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /* height: 12.5rem; */
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+    margin: 0 auto;
+    margin-top: 1.25rem;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    width: 17.9rem;
+  }
+
+  /* product discription container */
+
+  .box2 {
+    width: 17.9rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-right: 0;
+    background-color: hsl(0, 0%, 100%);
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  /* flexbox */
+
+  .prices {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 2rem;
+  }
+
+  /* individual element styles */
+
+  .product-name,
+  .sub-discription {
+    font-family: "Montserrat", serif;
+    color: hsl(228, 12%, 48%);
+    font-size: 0.875em;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+    /* align-self: center; */
+  }
+  .sub-discription {
+    margin-left: 1rem;
+  }
+
+  .product-name {
+    letter-spacing: 0.2em;
+    margin-left: 1rem;
+  }
+  .product-description {
+    font-family: "Fraunces", serif;
+    font-size: 1.4em;
+    margin-bottom: 0.5em;
+    margin-left: 1rem;
+  }
+
+  .sale {
+    color: hsl(158, 36%, 37%);
+    font-size: 1.3em;
+    font-family: "Fraunces", serif;
+    /* margin-bottom: 0.5em; */
+  }
+  .original-price {
+    font-family: "Montserrat", serif;
+    color: hsl(228, 12%, 48%);
+    font-size: 0.6em;
+  }
+  button {
+    background-color: hsl(158, 36%, 37%);
+    font-size: 0.875em;
+    font-family: "Montserrat", serif;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    border-radius: 0.5rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    padding: 0.5rem 3.5rem;
+  }
+}
