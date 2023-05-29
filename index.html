@@ -4,48 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@400;700&family=Outfit:wght@100&display=swap"
-      rel="stylesheet"
-      <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@400;700&family=Outfit:wght@100&display=swap"
-      rel="stylesheet"
-    />
-    <title>Product-Preview-Site</title>
+    <link rel="stylesheet" href="style/css/style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap");
+    </style>
+    <title>Product Review Card</title>
   </head>
   <body>
-    <article>
-      <div class="container">
-        <div class="box1">
-          <!--background image-->
-        </div>
-        <div class="box2">
-          <h1 class="product-name">Perfume</h1>
-          <p class="product-description">
-            Gabrielle Essence <br />
-            Eau da Perfum
+    <main>
+      <article class="main-container">
+        <picture>
+          <source
+            class="desktop-img"
+            media="(min-width: 779px)"
+            srcset="images/image-product-desktop.jpg"
+          />
+          <source
+            media="(min-width: 100px)"
+            srcset="images/image-product-mobile.jpg"
+          />
+          <img src="images/image-product-desktop.jpg" alt="product image" />
+        </picture>
+        <div class="right-side-container">
+          <h1>PERFUME</h1>
+          <h2 perfume-title>Gabrielle Essence Eau De Parfum</h2>
+          <p>
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
           </p>
-          <p class="sub-discription">
-            A floral, solar and voluptous interpretation composed by oliver
-            Polge, Perfumer-Creator for the house of CHANEL.
-          </p>
-          <div class="prices">
-            <p class="sale">$149.99</p>
-            <p class="original-price"><del>$169.99</del></p>
+          <div class="price-container">
+            <div class="sale-price">&#36;149.99</div>
+            <div><del>&#36;169.99</del></div>
           </div>
-          <button>
-            <img src="icon-cart.svg" alt="cart-image" /> Add to Cart
-          </button>
+          <a
+            ><img src="images/icon-cart.svg" alt="picture of cart" />Add to
+            Cart</a
+          >
         </div>
-      </div>
-    </article>
+      </article>
+    </main>
   </body>
 </html>

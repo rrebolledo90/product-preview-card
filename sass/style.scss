@@ -1,0 +1,174 @@
+// -------------------- Resets -------------------------------
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+// -------------------- Utility Components --------------------
+$colors: (
+  "color-dark-green": hsl(158, 36%, 37%),
+  "color-primary-baige": hsl(30, 38%, 92%),
+  "color-neutral-grayish": hsl(228, 12%, 48%),
+  "color-nuetral-white": hsl(0, 0%, 100%),
+  "color-black": hsl(212, 21%, 14%),
+);
+
+$typography: (
+  "font-size-product-title": 0.9375rem,
+  "font-size-main-heading-cost": 2.625rem,
+  "font-size-discription-cart": 18px,
+  "font-size-sale-off": 0.8125rem,
+  "font-family-700-Fraunces": "Fraunces",
+  "font-family-500-700-Montserrat": "Montserrat",
+);
+
+body {
+  background-color: map-get($colors, color-primary-baige);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+// ------------------------ Main Card Styles -----------------------
+
+article {
+  h1 {
+    color: map-get($colors, color-neutral-grayish);
+    font-size: map-get($typography, font-size-product-title);
+    font-family: map-get($typography, font-family-500-700-Montserrat);
+    font-weight: 500;
+    align-self: flex-start;
+    width: 80%;
+    padding-top: 2.8125rem;
+    letter-spacing: 0.4688rem;
+    margin: 0 auto;
+  }
+  h2 {
+    color: map-get($colors, color-black);
+    font-size: map-get($typography, font-size-main-heading-cost);
+    font-family: map-get($typography, font-family-700-Fraunces);
+    margin-top: 1.9375rem;
+    width: 80%;
+  }
+  p,
+  div {
+    color: map-get($colors, color-neutral-grayish);
+    font-size: map-get($typography, font-size-discription-cart);
+    font-family: map-get($typography, font-family-500-700-Montserrat);
+    font-weight: 500;
+    text-align: left;
+  }
+  p {
+    padding-top: 41px;
+    line-height: 1.7;
+    width: 79%;
+    margin: 0 auto;
+  }
+  .sale-price {
+    color: map-get($colors, color-dark-green);
+    font-size: map-get($typography, font-size-main-heading-cost);
+    font-family: map-get($typography, font-family-700-Fraunces);
+    margin-top: 1.8125rem;
+  }
+  a {
+    margin-top: 1.875rem;
+    color: #fff;
+    font-size: map-get($typography, font-size-discription-cart);
+    font-family: map-get($typography, font-family-500-700-Montserrat);
+    font-weight: 700;
+    background-color: map-get($colors, color-dark-green);
+    padding: 1.25rem 5.625rem;
+    border-radius: 0.625rem;
+    display: inherit;
+    gap: 0.6875rem;
+    width: 80%;
+  }
+  img {
+    border-bottom-left-radius: 0.625rem;
+    border-top-left-radius: 0.625rem;
+  }
+}
+// ------------------------ Containers --------------------------------
+article {
+  display: flex;
+  flex-direction: row;
+  max-width: 50rem;
+}
+.right-side-container {
+  max-width: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  border-top-right-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
+  background-color: map-get($colors, color-nuetral-white);
+}
+.price-container {
+  display: flex;
+  align-items: flex-end;
+  width: 80%;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 779px) {
+  .right-side-container {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  article {
+    flex-direction: column;
+    width: 90%;
+    max-height: 611px;
+    max-width: 21.4375rem;
+  }
+  a {
+    margin-bottom: 2.5rem;
+  }
+  article {
+    h1,
+    p,
+    h2,
+    a {
+      width: 89%;
+    }
+    h1,
+    p {
+      font-size: 13px;
+    }
+    h2,
+    .sale-price {
+      font-size: 30px;
+    }
+    img {
+      border-top-right-radius: 0.625rem;
+      border-bottom-left-radius: 0;
+    }
+    a {
+      padding: 20px 60px;
+    }
+  }
+}
